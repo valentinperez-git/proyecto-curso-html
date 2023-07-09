@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <title>GLotis, el gato</title>
+    <link rel="stylesheet" href="style/contacto.css">
+</head>
+<body>
+    
+    <header>
+        <nav>  
+            <ul>     
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preferencias.html">Preferencias</a></li>
+                <li><a href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div>
+        <form action="">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribì acà tu nombre" required minlength="3">
+            <label for="apellido">Apellido: </label>
+            <input type="text" name="apellido" id="apellido" placeholder="Escribì acà tu apellido" required minlength="3">
+            <label for="mail">Email: </label>
+            <input type="text" name="mail" id="mail" placeholder="Escribì acà tu mail" required>
+            <label for="paìs" id="paìs"></label>
+            <select name="paìs" id="paìs">
+                <option value="Argentina">Argentina</option>
+                <option value="Cuba">Cuba</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Chipre">Chipre</option>
+                <option value="Barbados">Barbados</option>
+                <option value="Rusia">Rusia</option>
+                <option value="Afganistan">Afganistan</option>
+                <option value="Argentina 2">Argentina 2</option>
+            </select>
+            <label for="comentario">Comentario: </label>
+            <textarea name="comentario" id="comentario" placeholder="Escribì acà tu comentario"></textarea>
+
+            <label for="motivo">Motivo de contacto: </label>
+            <input type="radio" id="motivo" name="motivo"><i>Soy fan</i>
+            <input type="radio" id="motivo" name="motivo"><i>Quiero una remera</i>
+            <input type="radio" id="motivo" name="motivo"><i>Comerciales</i>
+            <input type="radio" id="motivo" name="motivo"><i>Reclamos</i>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+    </footer>
+</body>
+</html>
